@@ -10,5 +10,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
   && apt-get -y install --no-install-recommends \
-    gettext-base=0.19.8.1-6ubuntu0.3 \
+    gettext-base=21-3ubuntu2 \
   && rm -rf /var/lib/apt/lists/*
